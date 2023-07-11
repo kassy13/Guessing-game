@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Cormorant:wght@300&family=Dosis:wght@200&family=Instrument+Serif&family=Italianno&family=Merriweather&family=Montserrat:wght@200&family=Noto+Sans+Zanabazar+Square&family=Noto+Serif+JP:wght@200;300;400&family=Poppins:wght@200&family=Roboto+Serif:opsz,wght@8..144,300&family=Seaweed+Script&family=Space+Mono:wght@400;700&family=Turret+Road:wght@300&display=swap');
 
 * {
   margin: 0;
@@ -12,9 +13,26 @@ html {
 }
 
 body {
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: 'Turret Road', sans-serif;
+  font-weight: 900;
+  letter-spacing: 1rem;
   color: #eee;
-  background-color: #222;
+  background-image: linear-gradient(
+    to right top,
+    #481633,
+    #581649,
+    #621a63,
+    #652483,
+    #5b33a6,
+    #4a42b1,
+    #324fba,
+    #005ac1,
+    #005da9,
+    #005984,
+    #004f5e,
+    #024440
+  );
+  /* background-color: #222; */
   /* background-color: #60b347; */
 }
 
@@ -58,6 +76,7 @@ h1 {
 
 .number {
   background: #eee;
+  box-shadow: 2px 2px 12px white;
   color: #333;
   font-size: 6rem;
   width: 15rem;
@@ -70,7 +89,7 @@ h1 {
 }
 
 .between {
-  font-size: 1.4rem;
+  font-size: 2.4rem;
   position: absolute;
   top: 2rem;
   right: 2rem;
@@ -80,11 +99,13 @@ h1 {
   position: absolute;
   top: 2rem;
   left: 2rem;
+  box-shadow: 2px 2px 12px white;
 }
 
 .guess {
   background: none;
   border: 4px solid #eee;
+  box-shadow: 2px 2px 12px white;
   font-family: inherit;
   color: inherit;
   font-size: 5rem;
@@ -98,6 +119,7 @@ h1 {
 .btn {
   border: none;
   background-color: #eee;
+  box-shadow: 2px 2px 12px white;
   color: #222;
   font-size: 2rem;
   font-family: inherit;
@@ -106,7 +128,8 @@ h1 {
 }
 
 .btn:hover {
-  background-color: #ccc;
+  background-color: black;
+  color: white;
 }
 
 .message {
@@ -116,4 +139,7 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+p {
+  font-size: 3rem;
 }

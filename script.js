@@ -3,7 +3,10 @@
 // document.querySelector('span.score').textContent = 100;
 
 let randomNumber = Math.trunc(Math.random() * 20) + 1;
-
+let gradient =
+  'linear-gradient(to right top,  #481633, #581649, #621a63, #652483, #5b33a6,#4a42b1, #324fba,#005ac1,#005da9,#005984,#004f5e,#024440 )';
+let gradient2 =
+  'linear-gradient(to right bottom, #26292d, #212528, #1d2123, #191d1f, #15191a, #141a1a, #141a1a, #141b1a, #16211f, #192624, #1b2c29, #1e322e)';
 let score = 20;
 let highscore = 0;
 const displayMessage = function (message) {
@@ -23,9 +26,8 @@ document.querySelector('.check').addEventListener('click', function () {
   else if (guess === randomNumber) {
     // document.querySelector('.message').textContent =
     //   'You guessed the correct Number 🥳';
-    displayMessage('🎉 Correct Number!');
     document.querySelector('.number').textContent = randomNumber;
-    document.querySelector('body').style.backgroundColor = '#60b347';
+    document.querySelector('body').style.backgroundImage = gradient2;
     document.querySelector('.number').style.width = '30rem';
     if (score > highscore) {
       highscore = score;
@@ -75,11 +77,12 @@ document.querySelector('.check').addEventListener('click', function () {
 document.querySelector('.again').addEventListener('click', function () {
   randomNumber = Math.trunc(Math.random() * 20) + 1;
   score = 20;
+
   displayMessage('Start Guessing...');
   document.querySelector('.score').textContent = score;
   document.querySelector('.number').textContent = '?';
   document.querySelector('.guess').value = '';
 
-  document.querySelector('body').style.backgroundColor = '#222';
+  document.querySelector('body').style.backgroundImage = gradient;
   document.querySelector('.number').style.width = '15rem';
 });
