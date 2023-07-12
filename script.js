@@ -26,6 +26,7 @@ document.querySelector('.check').addEventListener('click', function () {
   else if (guess === randomNumber) {
     // document.querySelector('.message').textContent =
     //   'You guessed the correct Number 🥳';
+    displayMessage('correct Number 🎊');
     document.querySelector('.number').textContent = randomNumber;
     document.querySelector('body').style.backgroundImage = gradient2;
     document.querySelector('.number').style.width = '30rem';
